@@ -67,13 +67,36 @@ div#formulario{
 div.campo > label{
     display: none;
 }
+
+div.campo> span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input{
+    background-color:hsl(207, 100%, 71%);
+    font-size: 1em;
+    height: 75%;
+    width: calc(100% - 45.5px);
+    transform: translateY(-5px);
+    border-radius: 8px;
+    border: 0px;
+    padding: 4px;
+}
 form> div.campo{
-    background-color: #69C7E0;
+    background-color: #5ac9e7;
     display: block;
     height: 40px;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
+}
+
+div.campo >input:focus-within{
+    background-color: white;
+    border: none;
 }
 
 form > input#enviar{
